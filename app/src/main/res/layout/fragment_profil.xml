@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_profile"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Profil Bilgileri"
+            android:textColor="#3C9A50"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:padding="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/ustbaslik2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/kullaniciadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ustbaslik2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:drawableRight="@drawable/kulanici"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Kullanıcı Adı"
+                android:maxLines="1"
+                android:textColor="#5F6365" >
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/eposta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kullaniciadi"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:drawableRight="@drawable/mail"
+                android:ems="10"
+                android:hint="E-Posta Adresiniz"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="#5F6365" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/cinsiyet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eposta"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:drawableRight="@drawable/cinsiyet"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Cinsiyet"
+                android:maxLines="1"
+                android:textColor="#5F6365" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/dogumtarihi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cinsiyet"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:drawableRight="@drawable/dogumtarih"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Doğum Tarihiniz"
+                android:maxLines="1"
+                android:onClick=""
+                android:textColor="#5F6365" >
+            </EditText>
+
+
+
+            <EditText
+                android:id="@+id/ceptel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dogumtarihi"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:drawableRight="@drawable/mobil"
+                android:ems="10"
+                android:hint="Gsm No"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#5F6365"
+                android:enabled="false">
+            </EditText>
+
+            <EditText
+                android:id="@+id/postSayisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ceptel"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/textbox"
+                android:drawableRight="@drawable/postsayisi"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Post Sayiniz"
+                android:maxLines="1"
+                android:onClick=""
+                android:textColor="#5F6365"
+                android:enabled="false">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/postSayisi"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/butonlogin"
+                android:text="Güncelle"
+                android:textColor="#ffffff"
+                android:visibility="visible"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

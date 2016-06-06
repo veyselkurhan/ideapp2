@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_profile"
+    android:clickable="true"
+    tools:context="info.androidhive.slidingmenu.MyTitles"
+>
+
+    <RelativeLayout
+        android:id="@+id/headerPeople"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp" >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Postlarım"
+            android:textColor="#3C9A50"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTitleDetail"
+        android:background="@drawable/textbox"
+        android:hint="Bir şeyler yaz..."
+        android:layout_marginTop="10dp"
+        android:textColor="#5F6365"
+        android:layout_below="@+id/headerPeople"
+        />
+
+    <Button
+        android:id="@+id/btnAddNewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/butonlogin"
+        android:text="Gönder"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/etTitleDetail"
+        />
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnAddNewTitle">
+
+            <RelativeLayout
+                android:id="@+id/ustbaslik2People"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+            </RelativeLayout>
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rcMytitles">
+
+</android.support.v7.widget.RecyclerView>
+
+            </ScrollView>
+
+</RelativeLayout>
+
+</RelativeLayout>

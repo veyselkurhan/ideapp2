@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="5dp"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="40dp"
+
+        card_view:cardBackgroundColor="#9CCC65">
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rcComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:id="@+id/lllike"
+              android:gravity="center">
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:id="@+id/imglike"
+                  android:src="@drawable/likeic"
+                  android:layout_margin="10dp"/>
+              <TextView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:text="0"
+                  android:id="@+id/tvlike"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:layout_marginRight="20dp"
+                  android:textColor="#3C9A50"
+                  />
+
+          </LinearLayout>
+
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/lldislike"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imgdislike"
+        android:src="@drawable/dislikeicon"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/tvdislike"
+        android:text="0"
+        android:textColor="#FF5555"
+        />
+</LinearLayout>
+
+
+      </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:id="@+id/block"
+              android:gravity="center">
+
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:id="@+id/imgblock"
+                  android:src="@drawable/block"
+                  android:layout_margin="10dp"
+                  />
+              <TextView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:id="@+id/engelle"
+                  android:text="block"
+                  android:textSize="12dp"
+                  android:textColor="#FF5555"
+                  />
+          </LinearLayout>
+      </RelativeLayout>
+
+  </LinearLayout>
+
+
+</LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
